@@ -1,0 +1,16 @@
+{application, weatherpub,
+ [
+  {description, ""},
+  {vsn, "1"},
+  {registered, []},
+  {applications, [
+                  kernel,
+                  stdlib,
+		  lager,
+		  xbus,
+		  hid,
+		  exobus
+                 ]},
+  {mod, { weatherpub_app, []}},
+  {env, []}
+ ]}.

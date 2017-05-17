@@ -1,0 +1,7 @@
+# wh1080 weather station rule (usb 1941:8021)
+#  install as /etc|lib/udev/rules.d/50-wh1080.rules
+#  adduser username plugdev
+#  sudo udevadm control --reload
+#  sudo udevadm trigger
+#
+ACTION=="add", SUBSYSTEMS=="usb", ATTRS{idVendor}=="1941", ATTRS{idProduct}=="8021", MODE="660", GROUP="plugdev"
